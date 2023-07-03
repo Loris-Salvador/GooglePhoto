@@ -1,0 +1,104 @@
+https://accounts.google.com/o/oauth2/v2/auth?
+ scope=https://www.googleapis.com/auth/photoslibrary.readonly&
+ access_type=offline&
+ include_granted_scopes=true&
+ response_type=code&
+ state=state_parameter_passthrough_value&
+ redirect_uri=http://localhost&
+ client_id=227875095477-ehmj8gu179n30n2mj99tj1q7fo0f1s2o.apps.googleusercontent.com
+
+
+ --------------
+
+ POST /token HTTP/1.1
+Host: oauth2.googleapis.com
+Content-Type: application/x-www-form-urlencoded
+
+code=4/0AZEOvhX44zMwMh86YP-sFtgp8T3FFIaTXynxpRbK-NMsghTkI8OQr5n7cRcXMQFeEQsSPw
+client_id=181934383469-jcbsd9mh5qjgavqdgadnp776dftomi7e.apps.googleusercontent.com&
+client_secret=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&
+redirect_uri=http://localhost&
+grant_type=authorization_code
+
+
+-----
+
+//        HttpClient httpClient = HttpClients.createDefault();
+//
+//        try {
+//            HttpPost httpPost = new HttpPost("https://oauth2.googleapis.com/token");
+//
+//            // Set the request body as a JSON payload
+//            String requestBody = "{\"code\":\"4/0AZEOvhX44zMwMh86YP-sFtgp8T3FFIaTXynxpRbK-NMsghTkI8OQr5n7cRcXMQFeEQsSPw\"," +
+//                    "\"client_id\":\"227875095477-cpm3f73kp4ajthqegc18017amice6k0s.apps.googleusercontent.com\"," +
+//                    "\"client_secret\":\"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\"," +
+//                    "\"redirect_uri\":\"http://localhost\"," +
+//                    "\"grant_type\":\"authorization_code\"}";
+//
+//            StringEntity stringEntity = new StringEntity(requestBody);
+//            stringEntity.setContentType("application/json");
+//            httpPost.setEntity(stringEntity);
+//
+//            HttpResponse response = httpClient.execute(httpPost);
+//            HttpEntity entity = response.getEntity();
+//
+//            if (entity != null) {
+//                String responseString = EntityUtils.toString(entity);
+//                System.out.println(responseString);
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } finally {
+//            httpClient.getConnectionManager().shutdown();
+//        }
+
+
+
+
+
+C:\Users\loris\.jdks\openjdk-19.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3\lib\idea_rt.jar=54440:C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\loris\Desktop\AlbumPhoto\target\classes;C:\Users\loris\.m2\repository\com\google\photos\library\google-photos-library-client\1.7.3\google-photos-library-client-1.7.3.jar;C:\Users\loris\.m2\repository\com\google\api\gax-grpc\2.23.3\gax-grpc-2.23.3.jar;C:\Users\loris\.m2\repository\com\google\auth\google-auth-library-credentials\1.16.0\google-auth-library-credentials-1.16.0.jar;C:\Users\loris\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\loris\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\loris\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\loris\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\loris\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-api\1.53.0\grpc-api-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-context\1.53.0\grpc-context-1.53.0.jar;C:\Users\loris\.m2\repository\org\threeten\threetenbp\1.6.5\threetenbp-1.6.5.jar;C:\Users\loris\.m2\repository\com\google\auth\google-auth-library-oauth2-http\1.16.0\google-auth-library-oauth2-http-1.16.0.jar;C:\Users\loris\.m2\repository\com\google\http-client\google-http-client\1.42.3\google-http-client-1.42.3.jar;C:\Users\loris\.m2\repository\io\opencensus\opencensus-contrib-http-util\0.31.1\opencensus-contrib-http-util-0.31.1.jar;C:\Users\loris\.m2\repository\com\google\http-client\google-http-client-gson\1.42.3\google-http-client-gson-1.42.3.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-alts\1.53.0\grpc-alts-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-grpclb\1.53.0\grpc-grpclb-1.53.0.jar;C:\Users\loris\.m2\repository\com\google\protobuf\protobuf-java-util\3.21.7\protobuf-java-util-3.21.7.jar;C:\Users\loris\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-auth\1.53.0\grpc-auth-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-netty-shaded\1.53.0\grpc-netty-shaded-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-googleapis\1.53.0\grpc-googleapis-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-xds\1.53.0\grpc-xds-1.53.0.jar;C:\Users\loris\.m2\repository\io\opencensus\opencensus-proto\0.2.0\opencensus-proto-0.2.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-services\1.53.0\grpc-services-1.53.0.jar;C:\Users\loris\.m2\repository\com\google\re2j\re2j\1.6\re2j-1.6.jar;C:\Users\loris\.m2\repository\com\google\api\grpc\proto-google-common-protos\2.14.2\proto-google-common-protos-2.14.2.jar;C:\Users\loris\.m2\repository\com\google\api\api-common\2.6.2\api-common-2.6.2.jar;C:\Users\loris\.m2\repository\com\google\auto\value\auto-value-annotations\1.10.1\auto-value-annotations-1.10.1.jar;C:\Users\loris\.m2\repository\com\google\auto\value\auto-value\1.10.1\auto-value-1.10.1.jar;C:\Users\loris\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\loris\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\loris\.m2\repository\com\google\api\gax\2.23.3\gax-2.23.3.jar;C:\Users\loris\.m2\repository\io\opencensus\opencensus-api\0.31.1\opencensus-api-0.31.1.jar;C:\Users\loris\.m2\repository\com\google\protobuf\protobuf-java\3.21.10\protobuf-java-3.21.10.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-core\1.53.0\grpc-core-1.53.0.jar;C:\Users\loris\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\loris\.m2\repository\com\google\android\annotations\4.1.1.4\annotations-4.1.1.4.jar;C:\Users\loris\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.21\animal-sniffer-annotations-1.21.jar;C:\Users\loris\.m2\repository\io\perfmark\perfmark-api\0.25.0\perfmark-api-0.25.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-protobuf\1.53.0\grpc-protobuf-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-protobuf-lite\1.53.0\grpc-protobuf-lite-1.53.0.jar;C:\Users\loris\.m2\repository\io\grpc\grpc-stub\1.53.0\grpc-stub-1.53.0.jar;C:\Users\loris\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\loris\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\loris\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\loris\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\loris\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar Main
+Test
+yo1
+yo2
+Exception in thread "main" com.google.api.gax.rpc.UnauthenticatedException: io.grpc.StatusRuntimeException: UNAUTHENTICATED: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+	at com.google.api.gax.rpc.ApiExceptionFactory.createException(ApiExceptionFactory.java:116)
+	at com.google.api.gax.rpc.ApiExceptionFactory.createException(ApiExceptionFactory.java:41)
+	at com.google.api.gax.grpc.GrpcApiExceptionFactory.create(GrpcApiExceptionFactory.java:86)
+	at com.google.api.gax.grpc.GrpcApiExceptionFactory.create(GrpcApiExceptionFactory.java:66)
+	at com.google.api.gax.grpc.GrpcExceptionCallable$ExceptionTransformingFuture.onFailure(GrpcExceptionCallable.java:97)
+	at com.google.api.core.ApiFutures$1.onFailure(ApiFutures.java:67)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1132)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:31)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1270)
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:1038)
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:808)
+	at io.grpc.stub.ClientCalls$GrpcFuture.setException(ClientCalls.java:574)
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:544)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at com.google.api.gax.grpc.ChannelPool$ReleasingClientCall$1.onClose(ChannelPool.java:541)
+	at io.grpc.internal.DelayedClientCall$DelayedListener$3.run(DelayedClientCall.java:489)
+	at io.grpc.internal.DelayedClientCall$DelayedListener.delayOrExecute(DelayedClientCall.java:453)
+	at io.grpc.internal.DelayedClientCall$DelayedListener.onClose(DelayedClientCall.java:486)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:576)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:757)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:736)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+	Suppressed: com.google.api.gax.rpc.AsyncTaskException: Asynchronous task failed
+		at com.google.api.gax.rpc.ApiExceptions.callAndTranslateApiException(ApiExceptions.java:57)
+		at com.google.api.gax.rpc.UnaryCallable.call(UnaryCallable.java:112)
+		at com.google.photos.library.v1.internal.InternalPhotosLibraryClient.listAlbums(InternalPhotosLibraryClient.java:1169)
+		at com.google.photos.library.v1.internal.InternalPhotosLibraryClient.listAlbums(InternalPhotosLibraryClient.java:1136)
+		at com.google.photos.library.v1.PhotosLibraryClient.listAlbums(PhotosLibraryClient.java:303)
+		at Main.main(Main.java:29)
+Caused by: io.grpc.StatusRuntimeException: UNAUTHENTICATED: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+	at io.grpc.Status.asRuntimeException(Status.java:539)
+	... 17 more
+
+Process finished with exit code 1
